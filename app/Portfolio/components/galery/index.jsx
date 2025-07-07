@@ -4,7 +4,7 @@ import styles from './galery.module.scss';
 
 const imageUrls = [
   '/malir1.png',
-  '/pumpposterBB.png',
+  '/pumpposterBBigger.png',
   '/pump_insta.jpg',
   '/A_logo.svg',
   '/malir4.png',
