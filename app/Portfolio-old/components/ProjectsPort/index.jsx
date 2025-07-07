@@ -5,34 +5,28 @@ import Project from './components/project';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import Image from 'next/image';
-import Link from 'next/link';
-
 
 
 const projects = [
   {
-    title: "Ilustrace a Grafický design portfolio",
-    src: "ff1.png",
-    color: "#000000",
-    slug: "Projekt-no1"
+    title: "C2 Montreal",
+    src: "c2montreal.png",
+    color: "#000000"
   },
   {
-    title: "Malířství Růžička",
-    src: "malir1.png",
-    color: "#8C8C8C",
-    slug: "Projekt-no2"
+    title: "Office Studio",
+    src: "officestudio.png",
+    color: "#8C8C8C"
   },
   {
-    title: "Zámečnictví Dalešický",
-    src: "zamek1.png",
-    color: "#EFE8D3",
-    slug: "Projekt-no2"
+    title: "Locomotive",
+    src: "locomotive.png",
+    color: "#EFE8D3"
   },
   {
-    title: "DP web",
+    title: "Silencio",
     src: "silencio.png",
-    color: "#706D63",
-    slug: "Projekt-no2"
+    color: "#706D63"
   }
 ]
 
@@ -84,13 +78,10 @@ export default function Home() {
 
   return (
   <main onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}} className={styles.projects}>
-    
     <div className={styles.body}>
-      <h1 className={styles.nadpis}>Web development</h1>
       {
         projects.map( (project, index) => {
-          
-          return <Project index={index} slug={project.slug} title={project.title} manageModal={manageModal} key={index}/>
+          return <Project index={index} title={project.title} manageModal={manageModal} key={index}/>
         })
       }
     </div>
@@ -103,8 +94,8 @@ export default function Home() {
                 const { src, color } = project
                 return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
                     <Image 
-                    src={`/${src}`}
-                    width={360}
+                    src={`/images/${src}`}
+                    width={300}
                     height={0}
                     alt="image"
                     />
@@ -114,7 +105,7 @@ export default function Home() {
             </div>
         </motion.div>
         <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
-        <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>Více</motion.div>
+        <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</motion.div>
     </>
   </main>
   )
