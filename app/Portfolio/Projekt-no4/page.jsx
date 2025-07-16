@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react'
-import Heroimage from "../components/HeroimageC"
+import Heroimage from "../components/HeroimageD"
 import Videodiv from '../components/Videodiv4'
 import Description from '../components/descriptionB'
 import Footer from '../components/Footer-project'

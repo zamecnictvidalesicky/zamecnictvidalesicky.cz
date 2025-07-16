@@ -3,15 +3,15 @@ import React, { useState } from 'react';
 import styles from './galery.module.scss';
 
 const imageUrls = [
-  '/malir1.png',
+  '/malir6.png',
   '/pumpposterBBigger.png',
   '/pump_insta.jpg',
   '/A_logo.svg',
-  '/malir4.png',
+  '/dp-web.png',
   '/deardiary.png',
-  '/malir2.png',
-  '/malir3.png',
-  '/malir4.png',
+  '/zamek1.png',
+  '/deardiary-ph.PNG',
+  '/fan-pic2.png',
   '/malir5.png',
 ];
 

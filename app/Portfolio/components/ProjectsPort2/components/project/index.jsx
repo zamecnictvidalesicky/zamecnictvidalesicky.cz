@@ -18,7 +18,7 @@ export default function Project({ index, title, slug, manageModal }) {
 
   return (
     <Link
-      href={`/Portfolio2/${slug}`}
+      href={`/Portfolio/${slug}`}
       className={styles.project}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

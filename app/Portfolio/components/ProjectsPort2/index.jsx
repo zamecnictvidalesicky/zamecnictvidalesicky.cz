@@ -12,15 +12,15 @@ import Link from 'next/link';
 const projects = [
   {
     title: "Dear Diary",
-    src: "ff1.png",
+    src: "deardiary.png",
     color: "#000000",
-    slug: "Projekt-no1"
+    slug: "Projekt-no4"
   },
   {
     title: "Oracle JD Edwards",
     src: "malir1.png",
     color: "#8C8C8C",
-    slug: "Projekt-no2"
+    slug: "Projekt-no5"
   }
   
 ]

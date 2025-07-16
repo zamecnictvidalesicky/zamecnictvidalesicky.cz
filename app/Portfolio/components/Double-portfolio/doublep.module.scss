@@ -12,7 +12,7 @@
 .ellipse {
   width: 880px;
   height: 880px;
-  background-color: #d9d9d9b6;
+  background-color: #c0c0c0ee;
   border-radius: 50%;
   position: absolute;
   bottom: 0;
@@ -22,24 +22,35 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  bottom: -5px;
 }
 
+@media (max-width: 1600px) {
+  .ellipse {
+    width: 700px;
+    height: 700px;
+    bottom: -30px;
+  }
+}
 @media (max-width: 1300px) {
   .ellipse {
     width: 700px;
     height: 700px;
+    bottom: -30px;
   }
 }
 @media (max-width: 1100px) {
   .ellipse {
     width: 600px;
     height: 600px;
+    bottom: -30px;
   }
 }
 @media (max-width: 900px) {
   .ellipse {
     width: 500px;
     height: 500px;
+    bottom: -15px;
   }
 }
 @media (max-width: 650px) {
@@ -50,11 +61,12 @@
 
 .bottom {
   width: 99vw;
-  height: 21%;
+  height: 41%;
   background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(249, 249, 249, 1) 100%);
   display: flex;
   justify-content: center;
   align-items: end;
+  z-index: 2;
 }
 
 .image {
@@ -62,6 +74,12 @@
   height: 40px;
   position: relative;
   display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease; // pro plynulý efekt
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 @media (max-width: 900px) {
   .image {
@@ -92,7 +110,7 @@
 }
 
 .name {
-  font-size: 56px;
+  font-size: 64px;
   font-weight: 600;
 }
 
@@ -107,13 +125,26 @@
   }
 }
 
+.skill1,
+.skill2,
+.skill3 {
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #000fda; // nebo jakákoli barva
+  }
+}
+
 .skill1 {
   padding: 0 20px 0 0;
 }
+
 .skill2 {
   border-left: solid 1px black;
   padding: 0 20px;
 }
+
 .skill3 {
   border-left: solid 1px black;
   padding: 0 20px;
@@ -202,19 +233,19 @@
 }
 
 /* === Extra small devices (e.g. iPhone SE) === */
-@media (max-width: 400px) {
+@media (max-width: 570px) {
   .container {
     padding: 0 20px;
   }
 
   .name {
-    font-size: 44px;
+    font-size: 54px;
     text-align: center;
     padding-top: 30px;
   }
 
   .skills {
-    font-size: 18px;
+    font-size: 24px;
     flex-direction: column;
     align-items: center;
     text-align: center;

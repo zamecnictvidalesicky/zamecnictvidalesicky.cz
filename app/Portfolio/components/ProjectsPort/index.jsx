@@ -12,7 +12,7 @@ import Link from 'next/link';
 const projects = [
   {
     title: "Ilustrace a Grafický design portfolio",
-    src: "ff1.png",
+    src: "fan-pic2.png",
     color: "#000000",
     slug: "Projekt-no1"
   },
@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: "DP web",
-    src: "silencio.png",
+    src: "dp-web.png",
     color: "#706D63",
     slug: "Projekt-no2"
   }

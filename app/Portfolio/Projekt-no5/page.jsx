@@ -1,14 +1,12 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react'
-import Heroimage from "../components/HeroimageC"
-import Videodiv from '../components/Videodiv4'
-import Description from '../components/descriptionB'
+import Heroimage from "../components/HeroimageE"
+
 import Footer from '../components/Footer-project'
 import styles from './Projekt3.module.scss'
 import Lenis from 'lenis'
 
-import Technicals from '../components/TechnicalsC'
 import { filmData } from "./content3.jsx";
 import Image from 'next/image'
 import Link from 'next/link'
@@ -67,20 +65,6 @@ const Page = () => {
         />
         </Link>
       </div>
-
-      <Technicals
-        Tech1={filmData.Tech1}
-        Tech2={filmData.Tech2}
-        Tech3={filmData.Tech3}
-        Tech4={filmData.Tech4}
-        Barvy={filmData.Barvy}
-        Technologie={filmData.Technologie}
-        Font={filmData.Font}
-        Link={filmData.Link}
-        Rok={filmData.Rok}
-        Zákazníci={filmData.Zákazníci}
-      />
-
       
       <Footer />
     </div>

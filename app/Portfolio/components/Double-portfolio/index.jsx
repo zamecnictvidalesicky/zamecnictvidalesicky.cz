@@ -6,13 +6,13 @@ import Image from 'next/image';
 import { gsap } from 'gsap';
 
 const pairs = [
-  ['/malir1.png', '/deardiary.png'],
-  ['/malir1.png', '/deardiary.png'],
-  ['/malir1.png', '/deardiary.png'],
+  ['/malir6.png', '/deardiary.png'],
+  ['/fan-pic2.png', '/zamek1.png'],
+  ['/pumpposterBBigger.png', '/deardiary.png'],
   ['/malir1.png', '/deardiary.png'],
 ];
 
-export default function Index() {
+export default function Doublep({ onScrollToProjectNew, onScrollToGallery }) {
   const [slide, setSlide] = useState(0);
   const [lightboxSrc, setLightboxSrc] = useState(null);
   const leftRef = useRef(null);
@@ -27,13 +27,15 @@ export default function Index() {
 
   useEffect(() => {
     const [leftImg, rightImg] = [leftRef.current, rightRef.current];
-    gsap.set([leftImg, rightImg], { x: '100%' });
-    gsap.to([leftImg, rightImg], {
-      x: '0%',
-      duration: 0.8,
-      ease: 'power2.out',
-      stagger: 0.1,
-    });
+    if (leftImg && rightImg) {
+      gsap.set([leftImg, rightImg], { x: '100%' });
+      gsap.to([leftImg, rightImg], {
+        x: '0%',
+        duration: 0.8,
+        ease: 'power2.out',
+        stagger: 0.1,
+      });
+    }
   }, [slide]);
 
   const open = (src) => setLightboxSrc(src);
@@ -51,9 +53,9 @@ export default function Index() {
           <div className={styles.texttop}>
             <h1 className={styles.name}>David Pešek</h1>
             <div className={styles.skills}>
-              <h2 className={styles.skill1}>UX/UI</h2>
-              <h2 className={styles.skill2}>Web development</h2>
-              <h2 className={styles.skill3}>Grafický design</h2>
+              <h2 className={styles.skill1} onClick={onScrollToProjectNew}>UX/UI</h2>
+              <h2 className={styles.skill2} onClick={onScrollToProjectNew}>Web development</h2>
+              <h2 className={styles.skill3} onClick={onScrollToGallery}>Grafický design</h2>
             </div>
           </div>
 
@@ -83,8 +85,8 @@ export default function Index() {
 
         <div className={styles.ellipse}>
           <div className={styles.bottom}>
-            <div className={styles.image}>
-              <Image src="/Vector3.svg" alt="Scroll" fill />
+            <div onClick={onScrollToProjectNew} className={styles.image} >
+              <Image src="/Vector3.svg" alt="Scroll"  fill />
             </div>
           </div>
         </div>
@@ -92,9 +94,7 @@ export default function Index() {
 
       {lightboxSrc && (
         <div className={styles.lightbox} onClick={close}>
-          <button className={styles.closeBtn} onClick={close}>
-            ×
-          </button>
+          <button className={styles.closeBtn} onClick={close}>×</button>
           <img src={lightboxSrc} alt="Full screen" />
         </div>
       )}

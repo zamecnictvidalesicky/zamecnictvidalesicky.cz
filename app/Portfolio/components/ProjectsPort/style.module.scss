@@ -50,10 +50,11 @@
 
   .nadpis {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 16px;
+    padding-left: 30px;
     margin-top: 80px;
     font-family: 'condensed-j2';
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 600;
     color: #474747;
 
@@ -131,7 +132,7 @@
   }
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.1;
 
     h2 {
       transform: translateX(-10px);
