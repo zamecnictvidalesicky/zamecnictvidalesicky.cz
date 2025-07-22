@@ -6,7 +6,6 @@ const imageUrls = [
   '/malir6.png',
   '/pumpposterBBigger.png',
   '/pump_insta.jpg',
-  '/A_logo.svg',
   '/dp-web.png',
   '/deardiary.png',
   '/zamek1.png',
