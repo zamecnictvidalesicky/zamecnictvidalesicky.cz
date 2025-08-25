@@ -1,0 +1,62 @@
+.pricing {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'condensed-j2';
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1rem;
+  background: #f9f9f9;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'condensed-j2';
+
+  tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+
+  td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+  }
+}
+
+.service {
+  font-weight: 500;
+  color: #333;
+  font-family: 'condensed-j2';
+}
+
+.price {
+  text-align: right;
+  font-weight: 600;
+  color: #0070f3;
+}
+
+
+@font-face {
+    font-family: 'condensed-j';
+    src: url('../../../../public/images/ClashDisplay-Light.otf');
+}
+.j-font3 {
+    font-family: 'condensed-j';
+}
+@font-face {
+    font-family: 'condensed-j2';
+    src: url('../../../../public/images/ClashDisplay-Regular.otf');
+}
+.j-font4 {
+    font-family: 'condensed-j2';
+}

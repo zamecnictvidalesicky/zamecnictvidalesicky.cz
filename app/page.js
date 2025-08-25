@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
 
 export default function Page() {
-  redirect('/Portfolio'); // nebo jakákoliv jiná existující route
+  redirect('/Landing'); // nebo jakákoliv jiná existující route
 }

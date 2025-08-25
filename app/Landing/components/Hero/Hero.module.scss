@@ -1,0 +1,72 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+  background: #f9f9f9;
+}
+
+.content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-family: 'condensed-j2';
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 2rem;
+  font-family: 'condensed-j';
+}
+
+.cta {
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: #005bb5;
+  }
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+@font-face {
+    font-family: 'condensed-j';
+    src: url('../../../../public/images/ClashDisplay-Light.otf');
+}
+.j-font3 {
+    font-family: 'condensed-j';
+}
+@font-face {
+    font-family: 'condensed-j2';
+    src: url('../../../../public/images/ClashDisplay-Regular.otf');
+}
+.j-font4 {
+    font-family: 'condensed-j2';
+}

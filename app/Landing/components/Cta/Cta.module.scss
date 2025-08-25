@@ -1,0 +1,60 @@
+.cta {
+  background: #222; // tmavé pozadí
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  height: 50vh;              // výška na 50% obrazovky
+
+  display: flex;             // flex container
+  align-items: center;       // zarovnání na střed vertikálně
+  justify-content: center;   // zarovnání na střed horizontálně
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    font-family: 'condensed-j2';
+
+    span {
+      font-weight: 700;
+      color: #ffcc00; // zvýraznění části textu
+      font-family: 'condensed-j2';
+    }
+  }
+
+  .button {
+    display: inline-block;
+    background: #ffcc00;
+    color: #000;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #e6b800;
+    }
+  }
+}
+
+@font-face {
+  font-family: 'condensed-j';
+  src: url('../../../../public/images/ClashDisplay-Light.otf');
+}
+.j-font3 {
+  font-family: 'condensed-j';
+}
+@font-face {
+  font-family: 'condensed-j2';
+  src: url('../../../../public/images/ClashDisplay-Regular.otf');
+}
+.j-font4 {
+  font-family: 'condensed-j2';
+}

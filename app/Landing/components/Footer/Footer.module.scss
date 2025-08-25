@@ -1,0 +1,65 @@
+.footer {
+  background-color: #222;
+  color: #f5f5f5;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (min-width: 600px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .logoSection {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    .logo {
+      width: 50px;
+      height: auto;
+    }
+
+    .companyName {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+
+  .contactSection {
+    text-align: center;
+
+    @media (min-width: 600px) {
+      text-align: left;
+    }
+
+    p {
+      margin: 0.3rem 0;
+
+      a {
+        color: #ffcc00;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .copy {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+}
